@@ -6,22 +6,33 @@ import Container from "../components/container";
 
 function signupPage() {
   return (
-    <div>
-      <Container>
-        <Wrapper>
-          <Jumbotron>
-            <h1 className="display-3">VoiceStickies</h1>
-            <p className="lead">
-              An app that records your voice and translates to text
-            </p>
-            <p className="lead">
-              Please make an account or sign-in to an existing
-            </p>
-          </Jumbotron>
-        </Wrapper>
-      </Container>
-      <Footer />
+
+    <div class="register-photo" />
+    <div class="form-container" />
+    <form method="post" action="/register" />
+    <h2 class="text-center">{{ title }}</h2>
+
+
+
+    < div class="form-group" >
+      <label for="email">Email</label>
+      <input class="form-control" type="email" name="email" placeholder="Email" id="inputEmail" />
+    </div >
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control" type="password" name="password" placeholder="Password" id="inputPassword" />
     </div>
+    <div class="form-group">
+      <label for="passwordMatch">Re-Enter Password</label>
+      <input class="form-control" type="password" name="passwordMatch" placeholder="Re-Enter Password" />
+    </div>
+
+    <div class="form-group">
+      <button id="register" class="btn btn-primary btn-block" type="submit">Sign Up</button>
+    </div> <a href="/login" class="already">You already have an account? Login here.</a>
+
+    <Footer />
+    </div >
   );
 }
 
