@@ -7,6 +7,7 @@ import Container from "../components/container";
 function loginPage() {
   return (
     <div>
+<h2 class="text-center"> Voice Stickies </h2>
 
       <form method="post" action="/login">
         <h2 class="sr-only">Login Form</h2>
